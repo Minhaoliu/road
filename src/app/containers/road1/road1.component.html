@@ -1,0 +1,168 @@
+<div class="mainpage">
+<nz-tabset [nzTabPosition]="'top'" [nzType]="'card'">
+  <nz-tab *ngFor="let tab of tabs;let i = index;" [nzTitle]="tab.title">
+    <div class="tab2" *ngIf="i==1">
+      <p>南一环与徽州大道</p>
+      <br />
+      <div class="btn">
+      <button nz-button nzType="primary">调度计划01</button>
+      <button nz-button nzType="primary">调度计划02</button>
+      <button nz-button nzType="primary">调度计划03</button>
+      </div>
+    </div>
+    <div class="tab3" *ngIf="i==2">
+    <b>上传附件:</b>
+    <nz-upload
+    nzAction="https://jsonplaceholder.typicode.com/posts/">
+    <button nz-button>
+      <i nz-icon type="upload"></i><span>上传文件</span>
+    </button>
+  </nz-upload>
+  <br />
+  <b>数据样例</b>
+  <br />
+    <nz-table
+        #borderedTable
+        nzBordered
+        [nzData]="dataSet">
+        <thead>
+          <tr>
+            <th>时间</th>
+            <th>东向西</th>
+            <th>东向北</th>
+            <th>东向南</th>
+            <th>西向东</th>
+            <th>西向北</th>
+            <th>西向南</th>
+            <th>南向北</th>
+            <th>南向西</th>
+            <th>南向东</th>
+            <th>北向南</th>
+            <th>北向东</th>
+            <th>北向西</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of borderedTable.data">
+            <td>{{data.time}}</td>
+            <td>{{data.direction1}}</td>
+            <td>{{data.direction2}}</td>
+            <td>{{data.direction3}}</td>
+            <td>{{data.direction4}}</td>
+            <td>{{data.direction5}}</td>
+            <td>{{data.direction6}}</td>
+            <td>{{data.direction7}}</td>
+            <td>{{data.direction8}}</td>
+            <td>{{data.direction9}}</td>
+            <td>{{data.direction10}}</td>
+            <td>{{data.direction11}}</td>
+            <td>{{data.direction12}}</td>
+          </tr>
+        </tbody>
+      </nz-table>
+    </div>
+    <div class="tab4" *ngIf="i==3">
+        <b>上传附件:</b>
+        <nz-upload
+        nzAction="https://jsonplaceholder.typicode.com/posts/">
+        <button nz-button>
+          <i nz-icon type="upload"></i><span>上传文件</span>
+        </button>
+      </nz-upload>
+      <br />
+      <b>数据样例</b>
+      <br />
+        <nz-table
+            #borderedTable
+            nzBordered
+            [nzData]="dataSet">
+            <thead>
+              <tr>
+                <th>时间</th>
+                <th>东向西</th>
+                <th>东向北</th>
+                <th>东向南</th>
+                <th>西向东</th>
+                <th>西向北</th>
+                <th>西向南</th>
+                <th>南向北</th>
+                <th>南向西</th>
+                <th>南向东</th>
+                <th>北向南</th>
+                <th>北向东</th>
+                <th>北向西</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let data of borderedTable.data">
+                <td>{{data.time}}</td>
+                <td>{{data.direction1}}</td>
+                <td>{{data.direction2}}</td>
+                <td>{{data.direction3}}</td>
+                <td>{{data.direction4}}</td>
+                <td>{{data.direction5}}</td>
+                <td>{{data.direction6}}</td>
+                <td>{{data.direction7}}</td>
+                <td>{{data.direction8}}</td>
+                <td>{{data.direction9}}</td>
+                <td>{{data.direction10}}</td>
+                <td>{{data.direction11}}</td>
+                <td>{{data.direction12}}</td>
+              </tr>
+            </tbody>
+          </nz-table>
+    </div>
+    <div class="tab5" *ngIf="i==4">
+        <b>上传附件:</b>
+        <nz-upload
+        nzAction="https://jsonplaceholder.typicode.com/posts/">
+        <button nz-button>
+          <i nz-icon type="upload"></i><span>上传文件</span>
+        </button>
+      </nz-upload>
+      <br />
+      <b>数据样例</b>
+      <br />
+        <nz-table
+            #borderedTable
+            nzBordered
+            [nzData]="dataSet">
+            <thead>
+              <tr>
+                <th>时间</th>
+                <th>东向西</th>
+                <th>东向北</th>
+                <th>东向南</th>
+                <th>西向东</th>
+                <th>西向北</th>
+                <th>西向南</th>
+                <th>南向北</th>
+                <th>南向西</th>
+                <th>南向东</th>
+                <th>北向南</th>
+                <th>北向东</th>
+                <th>北向西</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let data of borderedTable.data">
+                <td>{{data.time}}</td>
+                <td>{{data.direction1}}</td>
+                <td>{{data.direction2}}</td>
+                <td>{{data.direction3}}</td>
+                <td>{{data.direction4}}</td>
+                <td>{{data.direction5}}</td>
+                <td>{{data.direction6}}</td>
+                <td>{{data.direction7}}</td>
+                <td>{{data.direction8}}</td>
+                <td>{{data.direction9}}</td>
+                <td>{{data.direction10}}</td>
+                <td>{{data.direction11}}</td>
+                <td>{{data.direction12}}</td>
+              </tr>
+            </tbody>
+          </nz-table>
+    </div>
+  </nz-tab>
+</nz-tabset>
+</div>
